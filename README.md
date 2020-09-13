@@ -26,33 +26,33 @@ result faceting and highlighting.
 
 [![Build Status](https://builds.apache.org/view/L/view/Lucene/job/Lucene-Artifacts-master/badge/icon?subject=Lucene)](https://builds.apache.org/view/L/view/Lucene/job/Lucene-Artifacts-master/) [![Build Status](https://builds.apache.org/view/L/view/Lucene/job/Solr-Artifacts-master/badge/icon?subject=Solr)](https://builds.apache.org/view/L/view/Lucene/job/Solr-Artifacts-master/)
 
-# How to run the search engine in linux
+### How to run the search engine in linux
 
 Build the docker image from source code
 
-docker build -t search-engine-lucene-solr:6.6.7.
+# docker build -t search-engine-lucene-solr:6.6.7.
 
 Run the docker image
 
-docker run -it search-engine-lucene-solr:6.6.7
+# docker run -it search-engine-lucene-solr:6.6.7
 
 To index all local files with standard analyzer, it to tokenized all words and filter stop-words
 
-ant -f lucene/demo/build.xml \
--Ddocs=lucene/demo/data/wiki-small/en/articles/ run-html-indexing-demo
+# ant -f lucene/demo/build.xml \
+# -Ddocs=lucene/demo/data/wiki-small/en/articles/ run-html-indexing-demo
 
 Run the search engine
 
-ant -f lucene/demo/build.xml run-html-indexing-demo
+# ant -f lucene/demo/build.xml run-html-indexing-demo
 
 To index all local files with custom analyzer and customized ranking functions (term frequency-inverse document frequency)
 
-ant -f lucene/demo/build.xml \
--Ddocs=lucene/demo/data/wiki-small/en/articles/ run-tfidf-indexing
+# ant -f lucene/demo/build.xml \
+# -Ddocs=lucene/demo/data/wiki-small/en/articles/ run-tfidf-indexing
 
 Run the search engine
 
-ant -f lucene/demo/build.xml run-tfidf-search
+# ant -f lucene/demo/build.xml run-tfidf-search
 
 
 ## Development/IDEs
