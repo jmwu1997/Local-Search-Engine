@@ -55,14 +55,6 @@ Run the search engine
 ant -f lucene/demo/build.xml run-tfidf-search
 
 
-## Online Documentation
-
-This README file only contains basic setup instructions.  For more
-comprehensive documentation, visit:
-
-- Lucene: <http://lucene.apache.org/core/documentation.html>
-- Solr: <http://lucene.apache.org/solr/guide/>
-
 ## Development/IDEs
 
 Ant can be used to generate project files compatible with most common IDEs.
