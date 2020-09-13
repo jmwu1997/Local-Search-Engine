@@ -43,7 +43,7 @@ ant -f lucene/demo/build.xml \
 
 Run the search engine
 
-ant -f lucene/demo/build.xml run-search-index-demo
+ant -f lucene/demo/build.xml run-html-indexing-demo
 
 To index all local files with custom analyzer and customized ranking functions (term frequency-inverse document frequency)
 
